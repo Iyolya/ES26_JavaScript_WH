@@ -53,9 +53,11 @@ addBooks(newBooks) {
 
 printInventory() {
   this.books.forEach(({ author, title }) => {
+    const {title, author} = book;
     console.log(`${title} by ${author}`);
   });
 }
+
 }
 
 export default Library;
